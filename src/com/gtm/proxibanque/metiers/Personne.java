@@ -5,27 +5,23 @@ public class Personne {
 	protected String nom;
 	protected String prenom;
 	protected String adresse;
-	protected int codePostal;
+	protected int codepostal;
 	protected String ville;
-	protected String numeroTelephone;
-	
-	public Personne(String nom, String prenom, String adresse, int codePostal, String ville, String numeroTelephone) {
+	protected String numerotelephone;
+
+	public Personne(String nom, String prenom, String adresse, int codepostal, String ville, String numerotelephone) {
 		super();
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
-		this.codePostal = codePostal;
+		this.codepostal = codepostal;
 		this.ville = ville;
-		this.numeroTelephone = numeroTelephone;
+		this.numerotelephone = numerotelephone;
 	}
-	
-	
 
 	public Personne() {
 		super();
 	}
-
-
 
 	public String getNom() {
 		return nom;
@@ -51,12 +47,12 @@ public class Personne {
 		this.adresse = adresse;
 	}
 
-	public int getCodePostal() {
-		return codePostal;
+	public int getCodepostal() {
+		return codepostal;
 	}
 
-	public void setCodePostal(int codePostal) {
-		this.codePostal = codePostal;
+	public void setCodepostal(int codepostal) {
+		this.codepostal = codepostal;
 	}
 
 	public String getVille() {
@@ -67,23 +63,18 @@ public class Personne {
 		this.ville = ville;
 	}
 
-	public String getNumeroTelephone() {
-		return numeroTelephone;
+	public String getNumerotelephone() {
+		return numerotelephone;
 	}
 
-	public void setNumeroTelephone(String numeroTelephone) {
-		this.numeroTelephone = numeroTelephone;
+	public void setNumerotelephone(String numerotelephone) {
+		this.numerotelephone = numerotelephone;
 	}
 
 	@Override
 	public String toString() {
-		return "Personne [nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + ", codePostal=" + codePostal
-				+ ", ville=" + ville + ", numeroTelephone=" + numeroTelephone + "]";
+		return "Personne [nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + ", codepostal=" + codepostal
+				+ ", ville=" + ville + ", numerotelephone=" + numerotelephone + "]";
 	}
-	
-	
-	
-	
-	
-	
+
 }
